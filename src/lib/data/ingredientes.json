@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Tomate",
+    "precio": 50,
+    "grupo": "Frutas y Verduras",
+    "origen_animal": false
+  },
+  {
+    "nombre": "Lechuga",
+    "precio": 35,
+    "grupo": "Frutas y Verduras",
+    "origen_animal": false
+  },
+  {
+    "nombre": "vaca",
+    "precio": 50,
+    "grupo": "carne",
+    "origen_animal": true
+  }
+]

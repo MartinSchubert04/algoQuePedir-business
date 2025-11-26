@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+		<link rel="stylesheet" href="./estilos/global.css" />
+		<link rel="stylesheet" href="./estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="./estilos/Button.css" />
+		<link rel="stylesheet" href="./estilos/pedidos.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Phosphor icons import -->
+		<script src="https://unpkg.com/phosphor-icons"></script>
+	</head>
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href="perfil-local.html"
+								><img src="iconos/bowl-steam.svg"
+							/></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href="Menu.html"
+							><img src="assets/fork-knife.png"
+						/></a>
+						<a href="Ingredientes.html"
+							><img src="assets/bowl-food.png"
+						/></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<div class="current-container">
+						<a class="nav-bar-link current" href="pedidos.html"
+							>Pedidos</a
+						>
+					</div>
+					<a class="nav-bar-link" href="Menu.html">Menú</a>
+					<a class="nav-bar-link" href="Ingredientes.html"
+						>Ingredientes</a
+					>
+					<a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="pedidos-main-container">
+				<h2 class="section-title">Pedidos Actuales</h2>
+				<ol class="lista-filtros-pedidos">
+					<li class="filtro-pedidos">
+						<p class="input-label"><b>Pendientes</b></p>
+						<div class="filtro-texto-sombra"></div>
+					</li>
+					<li class="filtro-pedidos">
+						<p class="input-label">Preparados</p>
+						<div class="filtro-texto-sombra"></div>
+					</li>
+					<li class="filtro-pedidos">
+						<p class="input-label">Entregados</p>
+						<div class="filtro-texto-sombra"></div>
+					</li>
+					<li class="filtro-pedidos">
+						<p class="input-label">Cancelados</p>
+						<div class="filtro-texto-sombra"></div>
+					</li>
+				</ol>
+				<div class="divider"></div>
+
+				<section class="pedidos-container">
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #1234</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Sofía Miller</p>
+								<p class="user-name">
+									<b>usuario</b> smiller2005
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 2</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $25</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Av siempre viva 555</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-credit-card input-label"></i>
+							<p class="input-label">
+								Pago con tarjeta de crédito
+							</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #2342</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Micaela Moreno</p>
+								<p class="user-name">
+									<b>usuario</b> mMoreno05
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 13:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 3</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $35</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Calle falsa 123</p>
+								<p>Lat: 40.7128, Long: -73.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-money input-label"></i>
+							<p class="input-label">Pago en Efectivo</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #13456</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">José Gomez</p>
+								<p class="user-name"><b>usuario</b> becco22</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:00 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 1</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $15</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Cucha cucha 45</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-qr-code input-label"></i>
+							<p class="input-label">Pago con QR</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #1234</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Sofía Miller</p>
+								<p class="user-name">
+									<b>usuario</b> smiller2005
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 2</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $25</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Av siempre viva 555</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-credit-card input-label"></i>
+							<p class="input-label">
+								Pago con tarjeta de crédito
+							</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #1234</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Sofía Miller</p>
+								<p class="user-name">
+									<b>usuario</b> smiller2005
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 2</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $25</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Av siempre viva 555</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-money input-label"></i>
+							<p class="input-label">Pago en Efectivo</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #1234</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Sofía Miller</p>
+								<p class="user-name">
+									<b>usuario</b> smiller2005
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 2</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $25</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Av siempre viva 555</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-qr-code input-label"></i>
+							<p class="input-label">Pago con QR</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class="pedido-container">
+						<p class="pedido-numero input-label">Pedido #1234</p>
+						<div class="user-info-pedido">
+							<i class="ph ph-user-circle"></i>
+							<div class="user-text-container">
+								<p class="person-name">Sofía Miller</p>
+								<p class="user-name">
+									<b>usuario</b> smiller2005
+								</p>
+							</div>
+						</div>
+						<div class="detalles-pedido">
+							<p class="input-label">Hora: 12:30 PM</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Artículos: 2</p>
+							<div class="horizontal-divider"></div>
+							<p class="input-label">Total: $25</p>
+						</div>
+						<div class="ubicacion-container">
+							<div class="map-icon-container">
+								<i class="ph ph-map-pin"></i>
+							</div>
+							<div class="ubicacion-detalles">
+								<p>Av siempre viva 555</p>
+								<p>Lat: 40.7128, Long: -74.0060</p>
+							</div>
+						</div>
+						<div class="payment-container">
+							<i class="ph ph-credit-card input-label"></i>
+							<p class="input-label">
+								Pago con tarjeta de crédito
+							</p>
+						</div>
+						<div class="prepare-button-container">
+							<a href="Detalle.html">
+								<button class="prepare-button primary-button">
+									Preparar
+								</button>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algo que pedir</title>
+    <link rel="stylesheet" href="./estilos/Card.css" />
+    <link rel="stylesheet" href="./estilos/global.css">
+    <link rel="stylesheet" href="./estilos/Input.css">
+    <link rel="stylesheet" href="estilos/Main-container.css">
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+  </head>
+  <body>
+    <main class="main-container container-full-vh">
+    <section class="card login">
+      <header class="card-header">
+        <img src="assets/olla.png" class="card-page-logo">
+        <span class="main-card-title card-title-login">Algo que pedir</span>
+      </header>
+        <form class="input-form">
+          <div class="input-container">
+            <input type="text" class="input" name="username" id="username" autocomplete="off" placeholder=" ">
+            <label class="input-label" for="username">Usuario</label>
+          </div>
+          <div class="input-container">
+              <input class="input" type="password" autocomplete="off" placeholder=" "/>
+              <label class="input-label">Contraseña</label>
+              <img src="assets/eye.svg" class="input-icon-eye">
+          </div>
+          <a href="pedidos.html" class="no-underline"><button class="card-btn" type="button">Iniciar sesion</button></a>
+        </form>
+        <span class="card-message">¿No tienes cuenta? <a href="Signup.html">Registrate</a></span>
+    </main>
+   </body>
+
+</html>

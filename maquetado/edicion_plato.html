@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+		<link rel="stylesheet" href="estilos/Icon.css" />
+		<link rel="stylesheet" href="./estilos/Button.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/webicons/2.0.0/webicons.min.css"
+		/>
+		<!--icono-->
+		<link rel="stylesheet" href="estilos/guardar-cambios.css" />
+		<link rel="stylesheet" href="estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="estilos/Switch.css" />
+		<link rel="stylesheet" href="estilos/global.css" />
+		<!-- a lo ultimo mi archivo asi gana prioridad -->
+		<link rel="stylesheet" href="estilos/Main-container.css" />
+		<link rel="stylesheet" href="estilos/edicion-plato.css" />
+
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Phosphor icons import -->
+		<script src="https://unpkg.com/phosphor-icons"></script>
+	</head>
+
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href=""><img src="iconos/bowl-steam.svg" /></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href="Menu.html"
+							><img src="assets/fork-knife.png"
+						/></a>
+						<a href="Ingredientes.html"
+							><img src="assets/bowl-food.png"
+						/></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<!-- -->
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<a class="nav-bar-link" href="pedidos.html">Pedidos</a>
+					<div class="current-container">
+						<a class="nav-bar-link current" href="Menu.html"
+							>Menú</a
+						>
+					</div>
+					<a class="nav-bar-link" href="Ingredientes.html"
+						>Ingredientes</a
+					>
+					<a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- editar plato (cuadrito) -->
+
+		<main class="main-container">
+			<div class="costos-section">
+				<h1>Editar Plato</h1>
+				<div class="grid-editar-plato">
+					<div class="inputs-column">
+						<div class="input-group">
+							<label class="input-label">Nombre del plato*</label>
+							<input
+								type="text"
+								class="input-text-edi-plato"
+								value="Hamburguesa triple completa"
+							/>
+						</div>
+
+						<div class="input-group">
+							<label class="input-label">Descripción*</label>
+							<textarea class="input-text-edi-plato">
+Hamburguesa triple con una deliciosa cebolla morada salteada que junto con el acompañamiento de lechuga, tomate y cheddar generan una sensación única e inugualable. Viene sin adherezos</textarea
+							>
+						</div>
+
+						<div class="input-group">
+							<label class="input-label">URL de la imagen*</label>
+							<input
+								type="url"
+								class="input-text-edi-plato"
+								value="http://images.google.com/altaburger.jpg"
+							/>
+						</div>
+					</div>
+
+					<div class="dish-image">
+						<img
+							class="imagen-plato"
+							src="https://img.pikbest.com/photo/20240708/burger-hd-photo-with-black-table-_10658059.jpg!bw700"
+							alt="Hamburguesa triple completa"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- costos (cuadrito) -->
+			<div class="costos-section">
+				<h3>Costos</h3>
+
+				<div class="form-group">
+					<label for="precioBase">Precio Base*</label>
+					<!-- input -->
+					<input
+						type="number"
+						id="precioBase"
+						placeholder="Escribir"
+					/>
+				</div>
+
+				<!-- toggles -->
+				<div class="form-toggle">
+					<div>
+						<label for="platoAutor">Plato de Autor</label>
+						<p>Aplica un porcentaje adicional al precio de venta</p>
+					</div>
+					<div class="position-switch">
+						<div class="container-switch">
+							<label class="switch-label"></label>
+							<div class="toggle-enhanced">
+								<input
+									type="checkbox"
+									id="switch-enhanced"
+								/><label for="switch-enhanced">Toggle</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-toggle">
+					<div>
+						<label for="platoPromo">Plato en Promoción</label>
+						<p>Aplica un descuento al precio de venta</p>
+					</div>
+					<div class="position-switch">
+						<div class="container-switch">
+							<label class="switch-label"></label>
+							<div class="toggle-enhanced">
+								<input
+									type="checkbox"
+									id="switch-enhanced°2"
+								/><label for="switch-enhanced°2">Toggle</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- personalizar ingredientes (cuadrito)-->
+			<div class="costos-section">
+				<h3>Personalizar ingredientes</h3>
+				<h4>Costo de producción $ 100</h4>
+
+				<div class="grid-ingredientes">
+					<!-- header de los ingredientes (organizado por columnas)-->
+					<div class="header-ingredientes">Nombre</div>
+					<div class="header-ingredientes">Grupo </div>
+					<div class="header-ingredientes">Origen</div>
+					<div class="header-ingredientes">Borrar Ingrediente</div>
+
+					<!-- ingredientes -->
+					<div class="ingrediente">Carne de Res</div>
+					<div class="grupo-alimenticio ingrediente">Proteínas</div>
+					<div class="ingrediente"><img src="assets/cow.svg" /></div>
+					<div class="ingrediente pos-can-container">
+						<div class="can-container">
+							<label for="delete">
+								<div class="wrapper">
+									<div class="lid"></div>
+									<div class="can"></div>
+								</div>
+							</label>
+							<input type="checkbox" name="" id="delete" />
+						</div>
+					</div>
+
+					<div class="ingrediente">Queso Cheddar</div>
+					<div class="grupo-alimenticio ingrediente">Lácteos</div>
+					<div class="ingrediente"><img src="assets/cow.svg" /></div>
+					<div class="ingrediente pos-can-container">
+						<div class="can-container">
+							<label for="delete">
+								<div class="wrapper">
+									<div class="lid"></div>
+									<div class="can"></div>
+								</div>
+							</label>
+							<input type="checkbox" name="" id="delete" />
+						</div>
+					</div>
+
+					<div class="ingrediente">Lechuga</div>
+					<div class="grupo-alimenticio ingrediente">
+						Frutas y verduras
+					</div>
+					<div class="ingrediente">
+						<img src="assets/avocado.svg" />
+					</div>
+					<div class="ingrediente pos-can-container">
+						<div class="can-container">
+							<label for="delete">
+								<div class="wrapper">
+									<div class="lid"></div>
+									<div class="can"></div>
+								</div>
+							</label>
+							<input type="checkbox" name="" id="delete" />
+						</div>
+					</div>
+
+					<div class="ingrediente">Tomate</div>
+					<div class="grupo-alimenticio ingrediente">
+						Frutas y verduras
+					</div>
+					<div class="ingrediente">
+						<img src="assets/avocado.svg" />
+					</div>
+					<div class="ingrediente pos-can-container">
+						<div class="can-container">
+							<label for="delete">
+								<div class="wrapper">
+									<div class="lid"></div>
+									<div class="can"></div>
+								</div>
+							</label>
+							<input type="checkbox" name="" id="delete" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="guardar-cambios-section">
+				<button class="primary-button" type="submit">
+					Guardar 
+				</button>
+				<button class="secondary-button" type="submit">
+					Descartar 
+				</button>
+			</div>
+		</main>
+	</body>
+</html>

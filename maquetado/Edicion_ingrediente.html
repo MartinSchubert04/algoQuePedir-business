@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+		<link rel="stylesheet" href="estilos/global.css" />
+		<link rel="stylesheet" href="estilos/Input.css" />
+		<link rel="stylesheet" href="estilos/Main-container.css" />
+		<link rel="stylesheet" href="estilos/Card.css" />
+		<link rel="stylesheet" href="estilos/Card-element.css" />
+		<link rel="stylesheet" href="estilos/Button.css" />
+		<link rel="stylesheet" href="estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="estilos/Icon.css" />
+		<link rel="stylesheet" href="estilos/Switch.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href=""><img src="iconos/bowl-steam.svg" /></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href=""><img src="assets/fork-knife.png" /></a>
+						<a href=""><img src="assets/bowl-food.png" /></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<!-- -->
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<a class="nav-bar-link" href="pedidos.html">Pedidos</a>
+					<a class="nav-bar-link" href="Menu.html">Menú</a>
+					<div class="current-container">
+						<a class="nav-bar-link current" href="Ingredientes.html"
+							>Ingredientes</a
+						>
+					</div>
+					<a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main-container">
+			<header class="main-card-header">
+				<span class="main-card-title">Edicion Ingredientes</span>
+			</header>
+
+			<section class="mian-card card card-inputs">
+				<div class="container-inputs">
+					<div class="input-container big-input">
+						<input
+							type="text"
+							class="input big-input"
+							name="username"
+							autocomplete="off"
+							placeholder=" "
+						/>
+						<label class="input-label big-input-label" for="name"
+							>Nombre del ingrediente</label
+						>
+					</div>
+					<div class="input-container big-input">
+						<input
+							type="number"
+							class="input big-input"
+							name="username"
+							autocomplete="off"
+							placeholder=" "
+						/>
+						<label class="input-label big-input-label" for="name"
+							>Costo</label
+						>
+					</div>
+					<div class="input-container big-input">
+						<input
+							type="text"
+							class="input big-input"
+							name="username"
+							autocomplete="off"
+							placeholder=" "
+						/>
+						<label class="input-label big-input-label" for="name"
+							>Grupo Alimenticio</label
+						>
+					</div>
+
+					<div class="container-switch">
+						<label class="switch-label">Origen animal</label>
+						<div class="toggle-enhanced">
+							<input type="checkbox" id="switch-enhanced" /><label
+								for="switch-enhanced"
+								>Toggle</label
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="guardar-cambios-section">
+				<button class="primary-button" type="submit">
+					Guardar Cambios
+				</button>
+				<button class="secondary-button" type="submit">
+					Descartar Cambios
+				</button>
+			</div>
+		</main>
+	</body>
+</html>

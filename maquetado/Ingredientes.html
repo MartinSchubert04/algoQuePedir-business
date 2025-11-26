@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+		<link rel="stylesheet" href="estilos/global.css" />
+		<link rel="stylesheet" href="estilos/Input.css" />
+		<link rel="stylesheet" href="estilos/Main-container.css" />
+		<link rel="stylesheet" href="estilos/Card.css" />
+		<link rel="stylesheet" href="estilos/Card-element.css" />
+		<link rel="stylesheet" href="estilos/Button.css" />
+		<link rel="stylesheet" href="estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="estilos/Icon.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/phosphor-icons"></script>
+	</head>
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href="perfil-local.html"
+								><img src="iconos/bowl-steam.svg"
+							/></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href="Menu.html"
+							><img src="assets/fork-knife.png"
+						/></a>
+						<a href="Ingredientes.html"
+							><img src="assets/bowl-food.png"
+						/></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<a class="nav-bar-link" href="pedidos.html">Pedidos</a>
+					<a class="nav-bar-link" href="Menu.html">Menú</a>
+					<div class="current-container">
+						<a class="nav-bar-link current" href="Ingredientes.html"
+							>Ingredientes</a
+						>
+					</div>
+					<a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main-container">
+			<header class="main-card-header">
+				<span class="main-card-title">Ingredientes</span>
+				<button class="primary-button desktop-add-button">
+					Nuevo Ingrediente
+				</button>
+				<button class="primary-button mobile-add-button">
+					<div class="add-button-icon"></div>
+				</button>
+			</header>
+
+			<section class="main-card card">
+				<table class="card-table">
+					<thead class="card-table-head">
+						<tr class="atributtes">
+							<th class="table-item-name">Nombre</th>
+							<th class="table-item-cost">Costo</th>
+							<th class="table-item-group">Grupo Alimenticio</th>
+							<th class="table-item-origin">Origen</th>
+							<th class="table-action-items">Acciones</th>
+						</tr>
+					</thead>
+					<tbody class="card-table-body">
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Lechuga</td>
+							<td class="table-item-cost">$3</td>
+							<td class="table-item-group">Frutas y verduras</td>
+							<td class="table-item-origin">
+								<img
+									src="assets/avocado.svg"
+									class="icon-action"
+								/>
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+						<tr class="atributtes">
+							<td class="table-item-name">Pollo</td>
+							<td class="table-item-cost">$10</td>
+							<td class="table-item-group">Proteinas</td>
+							<td class="table-item-origin">
+								<img src="assets/cow.svg" class="icon-action" />
+							</td>
+							<td class="table-action-items">
+								<div class="hidden-item">
+									<img
+										src="assets/eye.svg"
+										class="icon-action"
+									/>
+									<img
+										src="assets/line-vertical.svg"
+										class="icon-action icon-line"
+									/>
+								</div>
+								<img
+									src="assets/pencil.svg"
+									class="icon-action"
+								/>
+								<img
+									src="assets/line-vertical.svg"
+									class="icon-action icon-line"
+								/>
+								<div class="can-container">
+									<label for="delete">
+										<div class="wrapper">
+											<div class="lid">
+												<div class="lid-filler"></div>
+											</div>
+											<div class="can">
+												<div class="can-filler"></div>
+											</div>
+										</div>
+									</label>
+									<input
+										type="checkbox"
+										name=""
+										id="delete"
+									/>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</main>
+	</body>
+</html>

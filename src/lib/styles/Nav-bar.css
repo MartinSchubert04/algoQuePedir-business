@@ -1,0 +1,281 @@
+/* Navbar */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	max-width: 100%;
+	background-color: var(--color-secundario);
+	padding: 0.5rem 3rem;
+	box-sizing: border-box;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	gap: 2rem;
+}
+
+.nav-bar-link {
+	color: black;
+	text-decoration: none;
+}
+.nav-bar-link:hover:not(.current) {
+	text-shadow: #000 0 0 0.4px;
+	cursor: pointer;
+}
+
+.nav-bar-link.active {
+	padding: 0.3rem;
+	border-bottom: 3px solid var(--color-primario-sombra);
+	font-weight: 700;
+	color: var(--color-primario-sombra);
+}
+
+/* Parte de la izquierda del nav bar*/
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	min-width: max-content;
+}
+
+.nav-title {
+	font-size: 1.3rem;
+}
+
+/* Parte de la derecha del nav bar */
+.links {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	white-space: nowrap;
+}
+
+.user-icon img {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+/* Logo */
+.logo-container {
+	width: 40px;
+	height: 40px;
+	background-color: var(--color-primario);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.logo-container img {
+	width: 24px;
+	height: 24px;
+	filter: brightness(0) invert(1);
+}
+
+/*
+
+BOTON ANIMADO
+
+*/
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	max-width: 100%;
+	background-color: var(--color-secundario);
+	padding: 0.5rem 3rem;
+	box-sizing: border-box;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	gap: 2rem;
+}
+
+/* Parte de la izquierda del nav bar*/
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	min-width: max-content;
+}
+
+/* Parte de la derecha del nav bar */
+.links {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	white-space: nowrap;
+}
+
+.user-icon img {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+/* Logo */
+.logo-container {
+	width: 40px;
+	height: 40px;
+	background-color: var(--color-primario);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.logo-container img {
+	width: 24px;
+	height: 24px;
+	filter: brightness(0) invert(1);
+}
+
+/* BOTON ANIMADO */
+.menu-btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: clamp(0px, (769px - 100vw) * 1000, 30px);
+	height: clamp(0px, (769px - 100vw) * 1000, 30px);
+	opacity: clamp(0, (769px - 100vw) * 1000, 1);
+	cursor: pointer;
+	transition: all 500ms ease-in-out;
+	border-radius: 4px;
+	background-color: var(--color-secundario);
+	overflow: hidden;
+
+	user-select: none;
+	-webkit-user-select: none; /* Safari iOS */
+	-ms-user-select: none; /* Edge antiguo */
+	-webkit-tap-highlight-color: transparent; /* quita el recuadro celeste al tocar */
+}
+
+.menu-btn input {
+	display: none;
+}
+
+.menu-btn span {
+	position: relative;
+	width: 18px;
+	height: 2px;
+	background-color: var(--color-sombra);
+	border-radius: 100vmax;
+	transition: all 500ms ease-in-out;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 2px;
+	background-color: var(--color-sombra);
+	border-radius: 2px;
+	transition: all 500ms ease-in-out;
+}
+
+.menu-btn span::before {
+	transform: translateY(-6px);
+}
+
+.menu-btn span::after {
+	transform: translateY(6px);
+}
+
+/* Animación cuando está checked */
+.menu-checkbox:checked ~ nav .menu-btn span {
+	background: transparent;
+}
+
+.menu-checkbox:checked ~ nav .menu-btn span::before {
+	transform: rotate(45deg) translate(0px, 0px);
+}
+
+.menu-checkbox:checked ~ nav .menu-btn span::after {
+	transform: rotate(-45deg) translate(0px, 0px);
+}
+
+/* NUEVA FUNCIONALIDAD: Mostrar not-main-link cuando el checkbox está checked */
+.menu-checkbox:checked ~ nav .links .nav-bar-link:not(.current) {
+	display: block;
+}
+
+.mobile-only {
+	display: none;
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+	.links > a:not(.current) {
+		display: none;
+	}
+}
+
+@media (max-width: 430px) {
+	.menu-btn {
+		pointer-events: none;
+	}
+
+	nav {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		border-top: 1px solid var(--color-secundario-sombra);
+		display: flex;
+		padding: 0.5rem 1rem;
+		z-index: 1;
+		justify-content: space-around;
+	}
+
+	/* ocultar cosas que no van en mobile */
+	.nav-title,
+	.links span,
+	.links > a.nav-bar-link,
+	.menu-btn,
+	.logo-container,
+	.links:not(.mobile-only) {
+		display: none;
+	}
+
+	/* bottom nav - AHORA incluye los 4 iconos */
+	.links.mobile-only {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: auto;
+		max-width: 100%;
+	}
+
+	.links.mobile-only a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 1rem;
+		min-height: 40px;
+		flex: 1;
+	}
+
+	.links.mobile-only img {
+		object-fit: contain;
+	}
+
+	/* Logo */
+	.logo-container-mobile {
+		width: 40px;
+		height: 40px;
+		background-color: var(--color-primario);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.logo-container-mobile img {
+		width: 24px;
+		height: 24px;
+		filter: brightness(0) invert(1);
+	}
+}

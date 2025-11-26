@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+
+		<link rel="stylesheet" href="estilos/global.css" />
+		<link rel="stylesheet" href="estilos/Main-container.css" />
+		<link rel="stylesheet" href="estilos/Card.css" />
+		<link rel="stylesheet" href="estilos/Card-element.css" />
+		<link rel="stylesheet" href="estilos/pedidos.css" />
+		<link rel="stylesheet" href="estilos/perfil-local.css" />
+		<link rel="stylesheet" href="estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="estilos/detalle-style.css" />
+		<link rel="stylesheet" href="./estilos/Button.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://unpkg.com/phosphor-icons"></script>
+	</head>
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href="perfil-local.html"
+								><img src="iconos/bowl-steam.svg"
+							/></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href="Menu.html"
+							><img src="assets/fork-knife.png"
+						/></a>
+						<a href="Ingredientes.html"
+							><img src="assets/bowl-food.png"
+						/></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<div class="current-container">
+						<a class="nav-bar-link current" href="pedidos.html"
+							>Pedidos</a
+						>
+					</div>
+					<a class="nav-bar-link" href="Menu.html">Menú</a>
+					<a class="nav-bar-link" href="Ingredientes.html"
+						>Ingredientes</a
+					>
+					<a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+    
+    <main class="main-container">
+        
+        <article class="pedido">
+            <h2 class="numeroPedido">Pedido#12345</h2>
+            <div class="estadoHeader">
+              <span class="estadoPedido"><b>Estado del Pedido</b></span>
+              <span class="badgePedido">Pendiente</span>
+            </div>
+        </article>
+       <section class="card">
+            <div class="datos-container">
+                <h2 class="titulo-header">Cliente</h2>
+
+                <div class="datos-header">
+                    <img src="assets/fotom.jpg"/>
+                    <div class="descripcion">
+                        <p class="texto_principal">Sofia Miller</p>
+                        <dl class="texto_secundario">
+                            <dt><b>usuario</b></dt>
+                            <dd>smiller2005</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="datos-container">
+                <h2 class="titulo-header">Direccion de entrega</h2>
+
+                <div class="datos-header">
+                    <div class="map-icon-container">
+                      <i class="ph ph-map-pin"></i>
+                    </div>
+                    <div class="descripcion">
+                      <p class="texto_principal">Av siempre viva 555</p>
+                      <p class="texto_secundario">Lat: 40.7128, Long: -74.0060</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card resumen">
+            <h2 class="titulo-header">Resumen del Pedido</h2>
+            <table class="card-table">
+                <thead>
+                    <tr class="resumen-atributtes">
+                        <th class="table-item-name plato">Plato</th>
+                        <th class="table-item-name cantidad">Cantidad</th>
+                        <th class="table-action-items precio">Precio</th>
+                    </tr>
+                </thead> 
+                <tbody class="card-table-body">
+                    <tr class="resumen-atributtes">
+                      <td class="descripcion-header">
+                        <img src="assets/burger.jpg" class="img-plato"/>
+                        <div class="descripcion producto">
+                          <p class="texto_principal texto-tabla">Hamburguesa con Queso</p>
+                          <p class="texto_secundario texto-tabla">Hamburguesa clasica con queso y papas fritas</p>
+                        </div>
+                      </td>
+                      <td class="table-item-name">1</td>
+                      <td class="table-item-cost">$12.00</td>
+                    </tr>
+                    <tr class="resumen-atributtes">
+                      <td class="descripcion-header">
+                        <img src="assets/papas.png " class="img-plato"/>
+                        <div class="descripcion producto">
+                          <p class="texto_principal texto-tabla">Papas fritas</p>
+                          <p class="texto_secundario texto-tabla">Tradicionales papas fritas crocantes</p>
+                        </div>
+                      </td>
+                      <td class="table-item-name">1</td>
+                      <td class="table-item-cost">$5.00</td>
+                    </tr>
+                    <tr class="resumen-atributtes">
+                      <td class="descripcion-header">
+                        <img src="assets/refresco.png" class="img-plato"/>
+                        <div class="descripcion producto">
+                          <p class="texto_principal texto-tabla">Refresco</p>
+                          <p class="texto_secundario texto-tabla">Jugo natural de fruta</p>
+                        </div>
+                      </td>
+                      <td class="table-item-name">1</td>
+                      <td class="table-item-cost">$3.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card pago">
+            <h2 class="titulo-header">Pago</h2>
+            <dl class="lista-pago">
+            <div class="filaPago">
+                <dt class="item-pago">Subtotal</dt>
+                <dd class="item-pago">$30.00</dd>
+            </div>
+            <div class="filaPago">
+                <dt class="item-pago">Comisión Delivery</dt>
+                <dd class="item-pago">$5.00</dd>
+            </div>
+            <div class="filaPago">
+                <dt class="item-pago">Incremento por tipo de pago</dt>
+                <dd class="item-pago">$2.00</dd>
+            </div>
+            <div class="filaPago total">
+                <dt><b>Total</b></dt>
+                <dd><b>$37.00</b></dd>
+            </div>
+            </dl>
+            <h2 class="titulo-header">Método de pago</h2>
+            <div class="metodoPago">
+                <i class="ph ph-credit-card"></i>
+                <p class="item-pago">Pago con tarjeta de crédito</p>
+            </div>
+        </section>
+        <div class="button-container">
+            <a href="pedidos.html">
+              <button class="primary-button">Volver</button>
+            </a>
+        </div>
+    </main>
+  </body>
+</html>

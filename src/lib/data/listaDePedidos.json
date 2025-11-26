@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "size": "small",
+    "estado": "Pendiente",
+    "nombreCliente": "Sofia Miller",
+    "usuario": "smiller2005",
+    "foto": "/src/lib/assets/fotom.jpg",
+    "hora": "12:30PM",
+    "items": 2,
+    "total": 25,
+    "direccion": "Av siempre viva 555",
+    "iconoGlobo": "ph-map-pin",
+    "latitud": 40.7128,
+    "longitud": -74.0060,
+    "metodoPago": "Pago con tarjeta de crédito",
+    "metodoIcon": "ph-credit-card"
+  },
+  {
+    "id": 2,
+    "size": "small",
+    "estado": "Entregado",
+    "nombreCliente": "Sofia Miller",
+    "usuario": "smiller2005",
+    "foto": "/src/lib/assets/fotom.jpg",
+    "hora": "12:30PM",
+    "items": 2,
+    "total": 25,
+    "direccion": "Av siempre viva 555",
+    "iconoGlobo": "ph-map-pin",
+    "latitud": 40.7128,
+    "longitud": -74.0060,
+    "metodoPago": "Pago en Efectivo",
+    "metodoIcon": "ph-money"
+  },
+  {
+    "id": 3,
+    "size": "small",
+    "estado": "Cancelado",
+    "nombreCliente": "Sofia Miller",
+    "usuario": "smiller2005",
+    "foto": "/src/lib/assets/fotom.jpg",
+    "hora": "12:30PM",
+    "items": 2,
+    "total": 25,
+    "direccion": "Av siempre viva 555",
+    "iconoGlobo": "ph-map-pin",
+    "latitud": 40.7128,
+    "longitud": -74.0060,
+    "metodoPago": "Pago con QR",
+    "metodoIcon": "ph-qr-code"
+  }
+]

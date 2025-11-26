@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Algo que pedir</title>
+		<link rel="stylesheet" href="./estilos/global.css" />
+		<link rel="stylesheet" href="estilos/Nav-bar.css" />
+		<link rel="stylesheet" href="./estilos/Card.css" />
+		<link rel="stylesheet" href="./estilos/Button.css" />
+		<link rel="stylesheet" href="./estilos/Input.css" />
+		<link rel="stylesheet" href="./estilos/perfil-local.css" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<input
+				type="checkbox"
+				id="menu-checkbox"
+				class="menu-checkbox"
+				style="display: none"
+			/>
+			<nav>
+				<div class="nav">
+					<div class="logo-container">
+						<img src="iconos/bowl-steam.svg" />
+					</div>
+					<!-- iconos mobile -->
+					<div class="links mobile-only">
+						<div class="logo-container-mobile">
+							<a href="perfil-local.html"
+								><img src="iconos/bowl-steam.svg"
+							/></a>
+						</div>
+						<a href="pedidos.html"
+							><img src="assets/shopping-cart.png"
+						/></a>
+						<a href="Menu.html"
+							><img src="assets/fork-knife.png"
+						/></a>
+						<a href="Ingredientes.html"
+							><img src="assets/bowl-food.png"
+						/></a>
+						<div class="user-icon">
+							<a href="Login.html"
+								><img src="iconos/icono_usuario.svg"
+							/></a>
+						</div>
+					</div>
+					<div class="nav-title">
+						<b>Algo que pedir</b>
+					</div>
+				</div>
+				<div class="links">
+					<a class="nav-bar-link" href="pedidos.html">Pedidos</a>
+					<a class="nav-bar-link" href="Menu.html">Menú</a>
+					<a class="nav-bar-link" href="Ingredientes.html"
+						>Ingredientes</a
+					>
+					<div class="current-container">
+						<a class="nav-bar-link current" href="perfil-local.html"
+							>Cuenta</a
+						>
+					</div>
+					<label class="menu-btn" for="menu-checkbox">
+						<span></span>
+					</label>
+					<div class="user-icon">
+						<a href="Login.html"
+							><img src="iconos/icono_usuario.svg"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="container-full-vh main-content-container">
+				<div class="main-card-header">
+					<h1 class="main-card-title">Información del local</h1>
+				</div>
+				<section class="card card-row">
+					<div class="input-form">
+						<div class="input-container">
+							<input
+								type="text"
+								class="input"
+								name="nombre-local"
+								autocomplete="off"
+								placeholder=" "
+							/>
+							<label class="input-label" for="nombre-local"
+								>Nombre del local *</label
+							>
+						</div>
+						<div class="input-container">
+							<input
+								class="input"
+								type="text"
+								autocomplete="off"
+								placeholder=" "
+							/>
+							<label class="input-label"
+								>URL de la imagen *</label
+							>
+						</div>
+					</div>
+					<div class="image-wrapper">
+						<img
+							class="imagen-local"
+							src="https://media.istockphoto.com/id/1061010034/es/foto/propietario-de-negocio-feliz-abriendo-la-puerta-en-un-caf%C3%A9.jpg?s=612x612&w=0&k=20&c=zeQXRe7tCLuzWzdGYQAzOTBTK6rSvIKTasabgqMTW5A="
+							alt="imagen-local"
+						/>
+					</div>
+				</section>
+
+				<section class="card">
+					<h2 class="card-title">Dirección</h2>
+					<div class="direccion-input-container">
+						<div class="direccion-input input-container">
+							<input type="text" class="input" placeholder=" " />
+							<label class="input-label">Direccion *</label>
+						</div>
+						<div class="direccion-input input-container">
+							<input
+								type="number"
+								class="input"
+								placeholder=" "
+							/>
+							<label class="input-label">Latitud *</label>
+						</div>
+						<div class="direccion-input input-container">
+							<input
+								type="number"
+								class="input"
+								placeholder=" "
+							/>
+							<label class="input-label">Altura *</label>
+						</div>
+						<div class="direccion-input input-container">
+							<input
+								type="number"
+								class="input"
+								placeholder=" "
+							/>
+							<label class="input-label">Longitud *</label>
+						</div>
+					</div>
+				</section>
+
+				<section class="card">
+					<h2 class="card-title">Porcentajes</h2>
+					<div class="porcentajes-input-container">
+						<div class="input-container">
+							<input type="text" class="input" placeholder=" " />
+							<label class="input-label"
+								>Porcentaje de comisión con la app *</label
+							>
+						</div>
+						<div class="input-container">
+							<input type="text" class="input" placeholder=" " />
+							<label class="input-label"
+								>Porcentaje de comisión con autores de platos
+								*</label
+							>
+						</div>
+					</div>
+					<h2 class="card-title">Método de pago</h2>
+					<div class="pago-checkbox-container">
+						<div class="pago-checkbox-item">
+							<input type="checkbox" name="efectivo" />
+							<label for="efectivo">Efectivo</label>
+						</div>
+						<div class="pago-checkbox-item">
+							<input type="checkbox" name="qr" />
+							<label for="qr">QR</label>
+						</div>
+						<div class="pago-checkbox-item">
+							<input type="checkbox" name="transferencia" />
+							<label for="transferencia">Transferencia</label>
+						</div>
+					</div>
+				</section>
+
+				<div class="buttons-container">
+					<button class="primary-button">Guardar</button>
+					<button class="secondary-button">Descartar</button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

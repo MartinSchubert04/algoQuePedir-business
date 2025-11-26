@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algo que pedir</title>
+    <meta
+      name="description"
+      content="Gestiona y consulta el menú de tu restaurante con Algo que pedir. Explora platos disponibles como pastas, ensaladas y hamburguesas."
+    />
+    <link rel="stylesheet" href="estilos/global.css" />
+    <link rel="stylesheet" href="estilos/Nav-bar.css" />
+    <link rel="stylesheet" href="estilos/Main-container.css" />
+    <link rel="stylesheet" href="estilos/Card.css" />
+    <link rel="stylesheet" href="estilos/Card-element.css" />
+    <link rel="stylesheet" href="estilos/Button.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <input
+        type="checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        style="display: none"
+      />
+      <nav aria-label="Navegación principal">
+        <div class="nav">
+          <div class="logo-container">
+            <a href="index.html" aria-label="Inicio">
+              <img src="iconos/bowl-steam.svg" alt="Logo Algo que pedir" />
+            </a>
+          </div>
+
+          <!-- iconos mobile -->
+          <div class="links mobile-only">
+            <div class="logo-container-mobile">
+              <a href="perfil-local.html" aria-label="Perfil local"
+                ><img src="iconos/bowl-steam.svg" alt="Perfil del local"
+              /></a>
+            </div>
+            <a href="pedidos.html" aria-label="Ver pedidos"
+              ><img src="assets/shopping-cart.png" alt="Carrito de compras"
+            /></a>
+            <a href="Menu.html" aria-label="Ver menú"
+              ><img src="assets/fork-knife.png" alt="Ícono menú"
+            /></a>
+            <a href="Ingredientes.html" aria-label="Ver ingredientes"
+              ><img src="assets/bowl-food.png" alt="Ícono ingredientes"
+            /></a>
+            <div class="user-icon">
+              <a href="Login.html" aria-label="Iniciar sesión"
+                ><img src="iconos/icono_usuario.svg" alt="Ícono usuario"
+              /></a>
+            </div>
+          </div>
+
+          <div class="nav-title">
+            <b>Algo que pedir</b>
+          </div>
+        </div>
+
+        <div class="links">
+          <a class="nav-bar-link" href="pedidos.html">Pedidos</a>
+          <div class="current-container">
+            <a class="nav-bar-link current" href="Menu.html">Menú</a>
+          </div>
+          <a class="nav-bar-link" href="Ingredientes.html">Ingredientes</a>
+          <a class="nav-bar-link" href="perfil-local.html">Cuenta</a>
+          <label class="menu-btn" for="menu-checkbox" aria-label="Abrir menú">
+            <span></span>
+          </label>
+          <div class="user-icon">
+            <a href="Login.html" aria-label="Iniciar sesión"
+              ><img src="iconos/icono_usuario.svg" alt="Ícono usuario"
+            /></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="main-card-header">
+        <h2 class="main-card-title">Gestión del Menú</h2>
+        <a href="edicion_plato.html">
+          <button
+            class="primary-button desktop-add-button"
+            aria-label="Agregar un nuevo plato"
+          >
+            Agregar Nuevo Plato
+          </button>
+        </a>
+
+        <button
+          class="primary-button mobile-add-button"
+          aria-label="Agregar un nuevo plato"
+        >
+          <div class="add-button-icon"></div>
+        </button>
+      </section>
+
+      <section aria-labelledby="platos-disponibles">
+        <h2 id="platos-disponibles" class="main-card-header">
+          Platos Disponibles
+        </h2>
+
+        <div class="main-card card">
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                alt="Plato de Pasta Cremosa"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>Pasta Cremosa</h3>
+                  <p class="text-sub">Deliciosa pasta con salsa cremosa</p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$12.99</span>
+          </article>
+
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                alt="Plato de Pasta Cremosa"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>Pasta Cremosa</h3>
+                  <p class="text-sub">Deliciosa pasta con salsa cremosa</p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$12.99</span>
+          </article>
+
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+                alt="Ensalada de la Huerta fresca"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>Ensalada de la Huerta</h3>
+                  <p class="text-sub">
+                    Ensalada fresca con hojas mixtas y vinagreta
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$7.50</span>
+          </article>
+
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                alt="Hamburguesa completa"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>
+                    Hamburguesa con queso, huevo, jamón, morrones y panceta
+                  </h3>
+                  <p class="text-sub">
+                    Deliciosa hamburguesa con queso doble, huevos fritos dobles,
+                    jamón, queso, morrones y panceta
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$12.99</span>
+          </article>
+
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+                alt="Ensalada de la Huerta fresca"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>Ensalada de la Huerta</h3>
+                  <p class="text-sub">
+                    Ensalada fresca con hojas mixtas y vinagreta
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$7.50</span>
+          </article>
+
+          <article class="card-menu">
+            <div class="card-menu-left img">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+                alt="Ensalada de la Huerta fresca"
+              />
+              <div class="card-menu-left">
+                <div class="card-text">
+                  <h3>Ensalada de la Huerta</h3>
+                  <p class="text-sub">
+                    Ensalada fresca con hojas mixtas y vinagreta
+                  </p>
+                </div>
+              </div>
+            </div>
+            <span class="card-menu-precio">$7.50</span>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

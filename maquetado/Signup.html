@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algo que pedir</title>
+    <link rel="stylesheet" href="./estilos/Card.css" />
+    <link rel="stylesheet" href="./estilos/global.css">
+    <link rel="stylesheet" href="./estilos/Input.css">
+    <link rel="stylesheet" href="estilos/Main-container.css">
+
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+  </head>
+  <body>
+    <main class="main-container container-full-vh">
+    <section class="card register">
+      <header class="card-header">
+        <img src="assets/olla.png" class="card-page-logo">
+        <span class=" main-card-title card-title-login">Crea tu cuenta</span>
+      </header>
+        <form class="input-form">
+          <div class="input-container">
+              <input type="text" class="input" name="username" autocomplete="off" placeholder=" ">
+              <label class="input-label" for="name">Usuario</label>
+          </div>
+          <div class="input-container">
+              <input class="input" type="password" autocomplete="off" placeholder=" "/>
+              <label class="input-label">Contraseña</label>
+              <img src="assets/eye.svg" class="input-icon-eye">
+          </div>
+          <div class="input-container">
+             <input class="input" type="password" autocomplete="off" placeholder=" "/>
+             <label class="input-label">Confirmar contraseña</label>
+             <img src="assets/eye.svg" class="input-icon-eye">
+          </div>
+          <div class="card-alert-container">
+            <img src="assets/warning.png" class="input-icon-warning">
+            <span class="card-message input-alert">Las contraseñas no coinciden</span>
+          </div>
+          <a href="pedidos.html" class="no-underline"><button class="card-btn"  type="button">Registrarse</button></a>
+        </form>
+        <span class="card-message">¿Ya tienes una cuenta? <a href="Login.html">Inicia sesión</a></span>
+      </main>
+  </body>
+</html>
