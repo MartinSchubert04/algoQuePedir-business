@@ -1,38 +1,60 @@
-# sv
+# algoQuePedir-business
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Overview
 
-## Creating a project
+Business-side frontend for a delivery application. This project provides the user interface and client-side logic required for businesses to manage orders, track deliveries, and interact with customers via the delivery platform.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```sh
-# create a new project in the current directory
-npx sv create
+- Responsive web UI for business users  
+- Order management (view, update status)  
+- Delivery tracking and status updates  
+- Real-time order updates (backend [here](https://github.com/MartinSchubert04/algoQuePedir-backend/))  
+- Modular structure using modern web technologies (Svelte / TypeScript / CSS / HTML)  
+- Linting and code formatting (ESLint / Prettier) configuration included  
 
-# create a new project in my-app
-npx sv create my-app
+## Tech Stack
+
+- Svelte  
+- TypeScript  
+- HTML & CSS  
+- JavaScript (where needed)  
+- Yarn / npm for package management  
+
+## Project Structure
+
+
+```bs
+/
+├── src/                   # Main source code (components, pages, stores, etc.)
+├── static/                # Static assets 
+├── maquetado/             # Layout / UI skeleton 
+├── e2e/                   # End-to-end tests 
+├── .vscode/               # VSCode workspace settings
+├── .github/workflows/     # CI / workflow definitions
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── eslint.config.js
+└── README.md
 ```
 
-## Developing
+## Setup
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Prerequisites
 
-```sh
-npm run dev
+- Node.js (recommended LTS version)  
+- Yarn or npm installed globally  
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MartinSchubert04/algoQuePedir-business.git
+
+# Install dependencies
+yarn install        # or: npm install
+
+yarn dev            # or: npm run dev
+yarn build          # or: npm run build
 ```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
